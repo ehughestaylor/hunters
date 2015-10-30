@@ -1,0 +1,41 @@
+@import 'variables.scss';
+
+// WIDTH AND BACKGROUND OF NAV
+.navbar, .navbar-default{
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  background-color: $black;
+  @media (min-width: 1200px) {
+      .container{
+          max-width: 970px;
+      }
+  }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: transparent;
+}
+
+
+
+/* Custom page footer */
+.footer {
+  .nav, .navbar-nav{
+    border: none;
+    li{
+      a{
+        color: #777;
+      }
+      a:hover{
+        color: #FFF;
+        background-color: transparent;
+      }
+    }
+  }
+  background-color: $black;
+  p, a, i{
+    color: $white;
+  }
+}
